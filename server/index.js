@@ -18,7 +18,10 @@ const URL =
   "mongodb+srv://travisha:travisha123@cluster0.cbt2zfn.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
-  .connect(process.env.URL, { useNewURLParser: true, useUnifiedTopology: true })
+  .connect(process.env.CONNECTION_URL, {
+    useNewURLParser: true,
+    useUnifiedTopology: true,
+  })
   .then(() => console.log("connected to DB"))
   .catch((e) => console.log(e.message));
 
