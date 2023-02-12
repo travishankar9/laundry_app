@@ -8,7 +8,7 @@ import { v4 } from "uuid";
 
 function App() {
   const [data, setData] = useState([]);
-  const [filter, setFilter] = useState("");
+  // const [filter, setFilter] = useState("");
   useEffect(() => {
     loadMachines();
   }, []);
